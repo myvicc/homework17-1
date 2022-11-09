@@ -89,7 +89,7 @@
 
     // Знайти суму парних позитивних елементів.
     const sumPair = arr.reduce((accum, number) => {
-        if (number > 0 && number % 2){
+        if (number > 0 && (number % 2 === 0)){
             return accum + number;
         }
         return accum;
